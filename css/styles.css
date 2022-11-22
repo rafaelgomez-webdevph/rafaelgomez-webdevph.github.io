@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eaeaea;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.author-container {
+  font-family: "MuseoModerno", cursive;
+  display: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#intro {
+  flex-grow: 1;
+  margin-left: 155px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: texteffect 2s linear infinite;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+@keyframes texteffect {
+  to {
+    background-position: 200% center;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-icos {
+  margin: 20px 150px 20px 150px;
+}
+
+
+li,
+.gmail-ico {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+}
+
+li,
+a {
+  opacity: 1;
+  transition: opacity 0.4s linear;
+
+}
+
+nav li:hover, a:hover {
+  opacity: 0.3;
+}
+
+.tech-icons li {
+  opacity: 1;
+  transition: opacity 0.4s linear;
+}
+
+.tech-icons li:hover{
+  opacity: 0.3;
+}
+
+
+svg {
+  fill: #00abb3;
+  width: 48px;
+  height: 48px;
+}
+
+.author-container {
+  display: none;
+  text-align: center;
+  position: absolute;
+  left: 150px;
+}
+
+h1 {
+  font-weight: 100;
+  color: #00abb3;
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+.para-1 {
+  color: #2c926bdc;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+main {
+  padding: 50px 142px 50px 142px;
+  height: 80vh;
+  text-align: center;
+}
+
+.para-2 {
+  font-size: 1rem;
+}
+
+.tech-icos {
+  padding: 40px;
+}
+
+.card-1 {
+  margin-top: 170px;
+}
+
+li span {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 510px;
+  visibility: hidden;
+  width: 55px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.6rem;
+}
+
+li:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.6s linear;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #00abb3;
+  color: #eaeaea;
+  border: solid #b2b2b2;
+  margin: 20px;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.profile-img {
+  display: none;
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 70%;
+  border: solid #b2b2b2 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.55);
+}
+
+a {
+  color: #2c926bdc;
+  text-decoration: none;
+}
+
+.card-2 {
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.card-2 p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.section-btns {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn,
+.next-btn-1 {
+  display: none;
+  width: 80px;
+}
+
+.section-btns {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 70%;
+}
+
+footer {
+  box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.4), 0 35px 45px 40px rgba(0, 0, 0, 0.19);
+  color: #b2b2b2;
+  background-color: #3c4048;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  text-align: center;
+  display: block;
+  font-size: 0.85rem;
+}
+
+/* icon colors: #00ABB3;
+Header/Nav/Footer: #3C4048;
+Other Color: #B2B2B2;
+Background color: #EAEAEA; */
